@@ -1,0 +1,17 @@
+<div class="col-md-4 offset-md-4">
+    <form (ngSubmit)="saveInstitution(institutionForm.value)" novalidate #institutionForm="ngForm">
+        <div class="form-group">
+            <label for="place">Місце розташування:</label>
+            <input type="text" [(ngModel)]="institution.place" class="form-control" id="place" name="place">
+          </div>
+          <div class="form-group">
+            <label for="institution_type">Тип закладу:</label>
+            <input type="text" [(ngModel)]="institution.institutionType" class="form-control" id="institution_type" name="institutionType">
+          </div>
+          <div class="form-group">
+            <label for="place_type">Тип населеного пункту:</label>
+            <input type="text" [(ngModel)]="institution.placeType" class="form-control" id="place_type" name="placeType">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
